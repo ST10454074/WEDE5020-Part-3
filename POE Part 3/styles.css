@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+/* Section Styling */
+.hero {
+    background-color: #e6ffe6;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.upcoming-events, .testimonials, .featured-news {
+    margin-bottom: 30px;
+}
+
+button, .button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, .button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive Design for Screens Smaller Than 960px */
+@media (max-width: 960px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+
+    .upcoming-events, .testimonials, .featured-news {
+        margin-bottom: 20px;
+    }
+
+    button, .button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2em;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Responsive Design for Screens Smaller Than 600px (Portrait Mode on a mobile device) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .hero {
+        padding: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .upcoming-events ul {
+        padding: 0;
+    }
+
+    button, .button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
